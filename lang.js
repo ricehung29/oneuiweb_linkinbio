@@ -11,7 +11,7 @@
         arrLang['en']['links'] = 'Links';
         arrLang['en']['other'] = 'Other';
         arrLang['en']['developer'] = 'This page was developed and hosted by me';
-        arrLang['en'][''] = '';
+        arrLang['en']['opensource'] = 'This project was open sourced , visit my <a href="https://github.com/ricehung29/oneuiweb_linkinbio">Github Repositories</a>';
         arrLang['en'][''] = '';       
 
 
@@ -25,7 +25,7 @@
         arrLang['zh-Hant']['links'] = '連結';
         arrLang['zh-Hant']['other'] = '其他';
         arrLang['zh-Hant']['developer'] = '此網頁由本人開發及維護';
-        arrLang['zh-Hant'][''] = '';
+        arrLang['zh-Hant']['opensource'] = '此項目已開源，<a href="https://github.com/ricehung29/oneuiweb_linkinbio">源碼</a>';
         arrLang['zh-Hant'][''] = '';
 
 

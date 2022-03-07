@@ -1,4 +1,16 @@
-<?php $u = $_GET["u"] ; ?>
+<?php 
+$u = $_GET["u"] ; 
+$utm_source = $_GET["utm_source"] ;
+$previous = $_SERVER['HTTP_REFERER'];
+
+/* if ($previous == "https://l.instagram.com/" && ( $utm_source == "ig_bio" || $utm_source == "insider" ) ){
+
+}else{
+  header('Location: ./404.html');
+  die();
+} */
+
+?>
 
 
 <!DOCTYPE html>
@@ -9,6 +21,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>@<?php echo $u?> IG Link Redirection Services</title>
   <link rel="stylesheet" href="./oui-css/oui.css">
+  <link rel="stylesheet" href="./oui-css/style.css">
 </head>
 
 <body>
@@ -51,7 +64,7 @@
 
     <div class="oui-bubble list-font ">
       <p class="oui-overlay-bubble-item bold left lang" key="links">Links</p>
-      <ul class="link-list">
+      <ul class="link-list uppdown">
         <?php include 'data.php' ;?>
       </ul>
     </div>
@@ -64,6 +77,7 @@
         <a href="https://github.com/ricehung29/" class="btn oui-button oui-button--active " key="">Github</a>
         <a href="https://twitter.com/ricehunghk?s=09" class="btn oui-button oui-button--active " key="">Twitter</a>
       </div>
+      <br>
     </div>
 
       <br>
@@ -71,22 +85,21 @@
       <div class="oui-bubble center little-bold ">
         <p class="oui-overlay-bubble-item small-text">
           This website was developed using <a href="https://oneuiweb.dev/#/">One UI Web</a> CSS framework<br> To learn more about One UI , please check the following link 
-          <br> <a href="https://github.com/SamsungInternet/OneUI-Web">One UI Web Github</a> &nbsp;&nbsp; <a href="https://www.samsung.com/hk/apps/one-ui/">One UI offical website</a> 
+          <br> <a href="https://github.com/SamsungInternet/OneUI-Web">One UI Web Github</a> &nbsp;&nbsp; <a href="https://www.samsung.com/hk/apps/one-ui/">One UI offical website</a>
+          <br>Visit the <a href="https://github.com/ricehung29/oneuiweb_linkinbio">Github Repository</a> for more open sourced details <br> 
         </p>
       </div>
 
     <br>
 
     <div class="oui-bubble center little-bold">
-      <p class="oui-overlay-bubble-item lang" key="developer">This page was developed and hosted by me
-      </p>
-      <p>©<?php echo $u?> Copyright 2016-
-        <script>document.write(new Date().getFullYear());</script> ricehung29
-        All rights reserved
+      <p class="oui-overlay-bubble-item lang" key="developer">This page was developed and hosted by @<?php echo $u ?> </p>
+      
+      <p>© Copyright 2016-
+        <script>document.write(new Date().getFullYear());</script> @<?php echo $u?> 
+        All rights reserved <br>
       </p>
     </div>
-
-
 
     <br>
 
@@ -97,9 +110,7 @@
 </body>
 
 <script src="./oui-css/scripts/oui.js"></script>
-<script src="./js/jquery-3.3.1.min.js"></script>
-<script src='./js/firebase-mix.js'></script>
-<!-- <script src="./js/script.js"></script> -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="./lang.js"></script>
 
 </html>
