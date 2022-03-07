@@ -3,7 +3,7 @@
 ### LinkInBio (One UI Web) is a self-hosted web based link redirection service . It was developed using One UI Web CSS framework . Simple to setup , simple to use . 
 
 ---
-## Requirnments
+## Requirements
 - PHP 5.6 or up
 ---
 ## Setup
